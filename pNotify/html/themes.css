@@ -1,0 +1,158 @@
+@font-face {
+    font-family: font33;
+    src: url(https://cdn.discordapp.com/attachments/797530806243295272/872501048630194196/BoxedMedium.ttf);
+}
+
+
+.noty_theme__gta.noty_bar {
+    margin: 4px 0;
+    overflow: hidden;
+    border-radius: 1px;
+    font-family: sans-serif;
+    position: relative;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.noty_theme__gta.noty_bar .noty_body {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.noty_theme__gta.noty_bar .noty_buttons {
+    padding: 0px; 
+}
+
+.noty_theme__gta.noty_bar .noty_progressbar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 300px;
+    background-color: white;
+    opacity: 100%;
+    filter: alpha(opacity=80);
+}
+
+.noty_theme__gta.noty_type__alert,
+.noty_theme__gta.noty_type__notification {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    font-family: font33;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.noty_theme__gta.noty_type__warning {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    font-family: font33;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.noty_theme__gta.noty_type__error {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    font-family: font33;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.noty_theme__gta.noty_type__info,
+.noty_theme__gta.noty_type__information {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 50%;
+    padding: 4px;
+    font-family: font33;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+}
+
+.noty_theme__gta.noty_type__success {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    font-family: font33;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.gta_effects_open {
+    opacity: 60%;
+    -webkit-transform: translate(50%);
+    -ms-transform: translate(50%);
+    transform: translate(50%);
+    -webkit-animation: noty_anim_in 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation: noty_anim_in 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.gta_effects_close {
+    -webkit-animation: noty_anim_out 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: noty_anim_out 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+
+@-webkit-keyframes noty_anim_out_left {
+  100% {
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    opacity: 0; } }
+
+@keyframes noty_anim_out_left {
+  100% {
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    opacity: 0; } }
+
+.gta_effects_open_left {
+    opacity: 60%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    -webkit-animation: noty_anim_in 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation: noty_anim_in 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.gta_effects_close_left {
+    -webkit-animation: noty_anim_out_left 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: noty_anim_out_left 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards; 
+}
+
+@-webkit-keyframes noty_anim_fade_in {
+  100% { opacity: 1; } }
+
+@keyframes noty_anim_fade_in {
+  100% { opacity: 1; } }
+
+@-webkit-keyframes noty_anim_fade_out {
+  100% { opacity: 0; } }
+
+@keyframes noty_anim_fade_out {
+  100% { opacity: 0; } }
+
+.gta_effects_fade_in {
+    opacity: 0;
+    animation: noty_anim_fade_in 0.5s;
+}
+
+.gta_effects_fade_out {
+    opacity: 1;
+    animation: noty_anim_fade_out 0.5s;
+}
